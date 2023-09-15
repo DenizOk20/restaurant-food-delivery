@@ -9,7 +9,7 @@ const categoryPage = () => {
       {pizzas.map(item => (
         <Link 
           key={item.id} 
-          href={`/category/${item.id}`}
+          href={`/product/${item.id}`}
           className='w-full h-[60vh] sm:w-1/2 lg:w-1/3 border-b-2 border-r-2 border-red-500 even:bg-fuchsia-50 p-4 flex flex-col justify-between group'
           >
             { item.img &&
