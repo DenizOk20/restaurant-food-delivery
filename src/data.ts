@@ -391,3 +391,39 @@ type Product = {
       color: "white",
     },
   ];
+
+  type Contact = {
+    id: number;
+    title: string;
+    desc?: string;
+    info: string;
+    button?: string;
+    img?: string;
+  }[];
+  
+  export const contact: Contact = [
+    {
+      id: 1,
+      title: "Phones",
+      desc: "Every day (09.00-23.00)",
+      info: "+34 123 456 7894",
+      img: "/phonecontact.png",
+    },
+    {
+      id: 2,
+      title: "Send Your Message",
+      info: "marepizza@gmail.com",
+      desc: "Thanky for prefers. Please tell us good or bad things.",
+      img: "/mail.png",
+      button: "Contact with e-mail",
+      
+    },
+    {
+      id: 3,
+      title: "Live Chat",
+      info: "Mr. Mark",
+      desc: "Contact to customer representative.",
+      img: "/chat.png",
+      button: "Type anything",
+    },
+  ];

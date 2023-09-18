@@ -3,7 +3,7 @@ import React from 'react'
 
 const cartPage = () => {
   return (
-    <div className='h-[calc(100vh-6rem)] md:h-[calc(100vh-6rem)] flex flex-col text-red-500 lg:flex-row'>
+    <div className='h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] flex flex-col text-red-500 lg:flex-row'>
       <div className='h-1/2 p-4 flex flex-col justify-center overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-slate-400 lg:w-2/3 lg:h-full 2xl:w-1/2 lg:px-20 xl:px-40'>
         <div className='flex justify-between items-center mb-2'>
           <Image src="/temporary/p1.png" alt='product' width={100} height={100}/>
