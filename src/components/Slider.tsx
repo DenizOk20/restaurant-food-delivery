@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-
+import { useRouter } from 'next/navigation'
 const data = [
     {
       id: 1,
@@ -22,6 +22,7 @@ const data = [
 
 const Slider = () => {
     const [currentSlide,setCurrentSlide] = useState(2)
+    const router = useRouter()
 
     useEffect(() => {
         const interval = setInterval(() =>
@@ -36,7 +37,7 @@ const Slider = () => {
             <h1 className='text-3xl text-center uppercase p-4 md:text-5xl md:p-10 xl:text-7xl'>
                 {data[currentSlide].title}
             </h1>
-            <button className='bg-red-500 text-white px-8 py-4'>Order Now</button>
+            <button onClick={() => router.push('/menu')} className='bg-red-500 text-white px-8 py-4'>Order Now</button>
         </div>
 
         <div className='relative flex-1 w-full'>

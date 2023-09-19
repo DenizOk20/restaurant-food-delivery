@@ -21,7 +21,7 @@ const loginPage = () => {
             <Image src="/facebook.png" alt='' width={20} height={20} className='object-contain'/>
             <span>Log in with Google</span>
           </button>
-          <p className='text-sm'>Have a problem ? <Link className='underline' href="/">Contact us</Link> </p>
+          <p className='text-sm'>Have a problem ? <Link className='underline' href="/contact">Contact us</Link> </p>
         </div>
       </div>
     </div>
